@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ma+Shan+Zheng&display=swap');
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    user-select: none;
+    overflow-x: hidden;
+    height: 6875px;
+    background-color: #fbfbfb;
+}
+
+.bg {
+    position: absolute;
+    width: 100vw;
+    height: 1232px;
+    left: 0;
+    top: 0;
+    background: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    height: 46px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    backdrop-filter: blur(10px);
+    z-index: 1000000;
+    /* Note: backdrop-filter has minimal browser support */
+}
+
+.nav .icon {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    left: 37px;
+    top: 7px;
+}
+
+.nav .textlogo {
+    position: absolute;
+    width: 124px;
+    height: 23px;
+    left: 89px;
+    top: 9px;
+    font-family: Dancing Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FBFBFB;
+}
+
+.mess {
+    position: absolute;
+    width: 55%;
+    height: 316px;
+    left: 76px;
+    top: 341px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(11px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mtextmess {
+    /* 我们热衷于制作写出精良的文字！ */
+    position: absolute;
+    width: 607px;
+    height: 112px;
+    left: 229px;
+    top: 102px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 55px;
+    color: #FBFBFB;
+}
+
+.dtextmess {
+    /* dear. */
+    color: #fbfbfb;
+    position: absolute;
+    width: 223px;
+    height: 79px;
+    left: 73px;
+    top: 24px;
+    font-family: Dancing Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 59px;
+}
+
+.htextmess {
+    /* -Text 0 */
+    position: absolute;
+    width: 262px;
+    height: 98px;
+    left: 792px;
+    top: 218px;
+    font-family: Dancing Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 86px;
+    color: #FBFBFB;
+}
+
+.fiction {
+    /* 小说 */
+    position: absolute;
+    width: 1360px;
+    height: 915px;
+    left: 50%;
+    top: 1147px;
+    transform: translateX(-50%);
+}
+
+.fiction .maintext {
+    position: absolute;
+    width: 550px;
+    height: 96px;
+    left: 397px;
+    top: 99px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 110.06%;
+    /* or 106px */
+    text-align: center;
+    letter-spacing: -0.09em;
+    color: #000000;
+}
+
+.fiction .block-f1 {
+    left: 150px;
+    top: 334px;
+}
+
+.fiction .block-f2 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 818px;
+    top: 334px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.fiction .block-f3 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 150px;
+    top: 943px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.fiction .block-f4 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 818px;
+    top: 943px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.fiction .block .name {
+    position: absolute;
+    width: 322px;
+    height: 85px;
+    left: 35px;
+    top: 49px;
+    font-family: Ma Shan Zheng;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.22em;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.fiction .block .text {
+    /* 直到他遇到了他人身中最重要的那个女生——夏许然。遇到她之后，落雁改变了好多，他居然开始认真上课。要知道，他高中一节课都没上过.... */
+    position: absolute;
+    width: 335px;
+    height: 200px;
+    left: 29px;
+    top: 135px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.block {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    transition: .5s;
+    color: black;
+}
+
+.block:hover {
+    transform: scale(1.02);
+    background: #ececec;
+}
+
+.br1 {
+    position: absolute;
+    width: 100vw;
+    height: 355px;
+    left: 1px;
+    top: 2732px;
+    background: url(assets/br1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
