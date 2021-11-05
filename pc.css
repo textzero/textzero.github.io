@@ -30,12 +30,28 @@ body {
 .bg {
     position: absolute;
     width: 100vw;
-    height: 1232px;
+    height: 1200px;
     left: 0;
     top: 0;
     background: url(assets/bg.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 120% 90%;
+    background-position: -300px;
+    animation: movebg 20s linear infinite;
+    overflow: hidden;
+    background-overflow: hidden;
+}
+
+@keyframes movebg {
+    0% {
+        background-position: -300px 0;
+    }
+    50% {
+        background-position: -350px 0;
+    }
+    100% {
+        background-position: -300px 0;
+    }
 }
 
 
@@ -82,7 +98,7 @@ body {
     position: absolute;
     width: 55%;
     height: 316px;
-    left: -576px;
+    left: 6px;
     top: 341px;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(11px);
@@ -103,7 +119,7 @@ body {
     font-family: KaiTi;
     font-style: normal;
     font-weight: normal;
-    font-size: 3vw;
+    font-size: 50px;
     line-height: 55px;
     color: #FBFBFB;
 }
@@ -119,7 +135,7 @@ body {
     font-family: Dancing Script;
     font-style: normal;
     font-weight: normal;
-    font-size: 3vw;
+    font-size: 50px;
     line-height: 59px;
 }
 
@@ -133,7 +149,7 @@ body {
     font-family: Dancing Script;
     font-style: normal;
     font-weight: normal;
-    font-size: 3vw;
+    font-size: 50px;
     line-height: 86px;
     color: #FBFBFB;
 }
@@ -146,7 +162,7 @@ body {
     position: absolute;
     width: 1360px;
     height: 915px;
-    left: 20%;
+    left: 40%;
     top: 1147px;
     transform: translateX(-50%);
     opacity: 0;
@@ -283,7 +299,7 @@ body {
     position: absolute;
     width: 1360px;
     height: 1585px;
-    left: 80%;
+    left: 60%;
     top: 3174px;
     transform: translateX(-50%);
 }
@@ -417,7 +433,7 @@ body {
     position: absolute;
     width: 1360px;
     height: 1585px;
-    left: 20%;
+    left: 40%;
     top: 5254px;
     transform: translateX(-50%);
     opacity: 0;
@@ -541,7 +557,7 @@ body {
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    top: 211px;
+    top: 150px;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
@@ -560,7 +576,7 @@ body {
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    top: 240px;
+    top: 220px;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
