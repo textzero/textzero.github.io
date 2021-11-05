@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="pc.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ma+Shan+Zheng&display=swap">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +18,12 @@
         <img class="icon" src="./assets/icon.svg">
         <font class="textlogo">text 0</font>
     </div>
-    <div class="mess">
+    <div class="mess" id="mess">
         <font class="dtextmess">dear.</font>
         <font class="mtextmess">我们热衷于制作写出精良的文字</font>
         <font class="htextmess">-Text 0</font>
     </div>
-    <div class="fiction">
+    <div class="fiction" id="fict">
         <font class="maintext">小说</font>
         <div class="block-f1 block">
             <font class="bf1name name">某小说</font>
@@ -41,6 +43,102 @@
         </div>
     </div>
     <div class="br1"></div>
+    <div class="intro" id="intro">
+        <font class="maintext">人设</font>
+        <div class="block-f1 block">
+            <font class="bf5name name">男主</font>
+            <textarea class="bf5text text" readonly="readonly" unselectable="on">姓名: 玄落雁
+年龄: 十七岁半
+职业: 学生，工地搬砖的
+性格: 喜欢安静
+其他: 特别不喜欢上学，高中一节课没上过。
+            </textarea>
+        </div>
+        <div class="block-f2 block">
+            <font class="bf6name name">女主</font>
+            <textarea class="bf6text text" readonly="readonly" unselectable="on">姓名:夏许然
+年龄:十七岁
+职业:学生
+其他:成绩特别好，你妈口中的“别人家的孩子”
+            </textarea>
+        </div>
+        <div class="block-f3 block">
+            <font class="name">男主好兄弟</font>
+            <textarea class="text" readonly="readonly" unselectable="on">姓名:文弦汶
+年龄:十七岁
+职业:学生
+其他:平时可见和同学聊天跟个傻逼一样，上课的时候喜欢和老师顶嘴，坏学生+1
+
+            </textarea>
+        </div>
+        <div class="block-f4 block">
+            <font class="name">占位</font>
+            <font class="text" readonly="readonly" unselectable="on">我就占个位子而已。。没必要吧。。。
+            </font>
+        </div>
+    </div>
+    <div class="br2"></div>
+    <div class="follow" id="follow">
+        <font class="maintext">追一波</font>
+        <div class="block-f1 block get">
+            <div class="btn" id="com">
+                <font class="text">社区小说</font>
+            </div>
+        </div>
+        <div class="block-f2 block get">
+            <div class="btn" id="picked">
+                <font class="text">精选小说</font>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <font class="footertext">Text 0</font>
+        <text class="copyright" id="c">©Yeyu 2021.</text>
+        <text class="copyright1">Made by <a href="https://starwo.github.io/">Star Web</a></text>
+    </div>
+
+    <script>
+        /* Button */
+        document.getElementById("com").onclick = function() {
+            window.location.href = "./community.html";
+        };
+        document.getElementById("picked").onclick = function() {
+            window.location.href = "./picked.html";
+        };
+    </script>
+    <script>
+        /* Animation */
+        function s() {
+            if (document.documentElement.scrollTop <= 500) {
+                document.getElementById("mess").style.left = "76px";
+                document.getElementById("mess").style.opacity = "1";
+            }
+            if (document.documentElement.scrollTop >= 500 && document.documentElement.scrollTop <= 2500) {
+                document.getElementById("fict").style.left = "50%";
+                document.getElementById("fict").style.opacity = "1";
+            }
+
+            if (document.documentElement.scrollTop >= 2500 && document.documentElement.scrollTop <= 4500) {
+                document.getElementById("intro").style.left = "50%";
+                document.getElementById("intro").style.opacity = "1";
+            }
+
+            if (document.documentElement.scrollTop >= 4500 && document.documentElement.scrollTop <= 5800) {
+                document.getElementById("follow").style.left = "50%";
+                document.getElementById("follow").style.opacity = "1";
+            }
+
+            if (document.documentElement.scrollTop > 5800) {
+                document.getElementById("c").style.marginTop = "102px";
+                document.getElementById("c").style.opacity = "1";
+            }
+
+        }
+        setInterval(s, 1);
+    </script>
 </body>
+
+</html>
 
 </html>

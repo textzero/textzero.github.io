@@ -1,15 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ma+Shan+Zheng&display=swap');
 ::-webkit-scrollbar {
     width: 0px;
+}
+
+::selection {
+    background: transparent;
+}
+
+::-moz-selection {
+    background: transparent;
+}
+
+::-webkit-selection {
+    background: transparent;
 }
 
 body {
     user-select: none;
     overflow-x: hidden;
-    height: 6875px;
     background-color: #fbfbfb;
 }
+
+* {
+    transition: left 1.2s, opacity 1.5s;
+}
+
+
+/*bghead*/
 
 .bg {
     position: absolute;
@@ -21,6 +37,9 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+
+/*Nav*/
 
 .nav {
     position: fixed;
@@ -56,11 +75,14 @@ body {
     color: #FBFBFB;
 }
 
+
+/*heading mess*/
+
 .mess {
     position: absolute;
     width: 55%;
     height: 316px;
-    left: 76px;
+    left: -576px;
     top: 341px;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(11px);
@@ -68,6 +90,7 @@ body {
     border-radius: 3px;
     text-overflow: ellipsis;
     overflow: hidden;
+    opacity: 0;
 }
 
 .mtextmess {
@@ -115,14 +138,18 @@ body {
     color: #FBFBFB;
 }
 
+
+/*fiction*/
+
 .fiction {
     /* 小说 */
     position: absolute;
     width: 1360px;
     height: 915px;
-    left: 50%;
+    left: 20%;
     top: 1147px;
     transform: translateX(-50%);
+    opacity: 0;
 }
 
 .fiction .maintext {
@@ -141,6 +168,9 @@ body {
     letter-spacing: -0.09em;
     color: #000000;
 }
+
+
+/*Blocks in fiction*/
 
 .fiction .block-f1 {
     left: 150px;
@@ -211,6 +241,9 @@ body {
     color: #000000;
 }
 
+
+/*blocks*/
+
 .block {
     position: absolute;
     width: 392px;
@@ -227,6 +260,9 @@ body {
     background: #ececec;
 }
 
+
+/*brs*/
+
 .br1 {
     position: absolute;
     width: 100vw;
@@ -236,4 +272,309 @@ body {
     background: url(assets/br1.png);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+
+/*intro*/
+
+.intro {
+    opacity: 0;
+    /* 人设 */
+    position: absolute;
+    width: 1360px;
+    height: 1585px;
+    left: 80%;
+    top: 3174px;
+    transform: translateX(-50%);
+}
+
+
+/*Blocks in intro*/
+
+.intro .block-f1 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 150px;
+    top: 334px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.intro .block-f2 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 818px;
+    top: 334px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.intro .block-f3 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 150px;
+    top: 943px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.intro .block-f4 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 818px;
+    top: 943px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.intro .block .name {
+    position: absolute;
+    width: 322px;
+    height: 85px;
+    left: 35px;
+    top: 49px;
+    font-family: Ma Shan Zheng;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.22em;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.intro .block .text {
+    position: absolute;
+    width: 335px;
+    height: 200px;
+    left: 29px;
+    top: 135px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    color: #000000;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    resize: none;
+    background-color: transparent;
+    cursor: default;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.intro .maintext {
+    position: absolute;
+    width: 550px;
+    height: 96px;
+    left: 397px;
+    top: 99px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 110.06%;
+    /* or 106px */
+    text-align: center;
+    letter-spacing: -0.09em;
+    color: #000000;
+}
+
+
+/*br2*/
+
+.br2 {
+    position: absolute;
+    width: 100vw;
+    height: 355px;
+    left: 1px;
+    top: 4829px;
+    background: url(assets/br2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*follow*/
+
+.follow {
+    /* 追 */
+    position: absolute;
+    width: 1360px;
+    height: 1585px;
+    left: 20%;
+    top: 5254px;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.follow .block-f1 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 150px;
+    top: 334px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.follow .block-f2 {
+    position: absolute;
+    width: 392px;
+    height: 470px;
+    left: 818px;
+    top: 334px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.follow .maintext {
+    position: absolute;
+    width: 550px;
+    height: 96px;
+    left: 397px;
+    top: 99px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 110.06%;
+    /* or 106px */
+    text-align: center;
+    letter-spacing: -0.09em;
+    color: #000000;
+}
+
+
+/*btn*/
+
+.btn {
+    position: absolute;
+    width: 284px;
+    height: 96px;
+    left: 54px;
+    top: 187px;
+    background: rgba(189, 204, 255, 0.8);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    transition: .4s;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 1px solid black;
+}
+
+.btn:hover .text {
+    color: #000000;
+}
+
+.btn .text {
+    transition: .3s;
+    position: absolute;
+    width: 284px;
+    height: 48px;
+    left: 0px;
+    top: 24px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    color: #000000;
+}
+
+.get:hover {
+    transform: scale(1.0);
+    background: #fbfbfb;
+}
+
+.footer {
+    position: absolute;
+    width: 100vw;
+    height: 389px;
+    left: 0px;
+    top: 6486px;
+    background: #3F3F3F;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.footertext {
+    position: absolute;
+    width: 100vw;
+    height: 0;
+    margin-top: 102px;
+    left: 0px;
+    top: 0px;
+    font-family: Dancing Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 115px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.copyright {
+    /* ©Yeyu 2021. Made by Star Web */
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 211px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: default;
+    resize: none;
+}
+
+.copyright1 {
+    /* ©Yeyu 2021. Made by Star Web */
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 240px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: default;
+    resize: none;
+}
+
+.copyright1 a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
 }
