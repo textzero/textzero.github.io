@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 :root {
     --title-font-size: 144px;
     --px100: 100vw;
 }
 
+html {
+    width: 100vw;
+}
+
 body {
+    top: 0;
+    left: 0;
     overflow-x: hidden;
     max-width: 100vw;
     min-width: 100vw;
     width: 100vw;
+    max-height: 3977vw;
 }
 
 * {
@@ -37,13 +45,13 @@ body {
 .fict .title {
     /* 小说 */
     position: absolute;
-    top: 35%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: KaiTi;
     font-style: normal;
     font-weight: normal;
-    font-size: 44px;
+    font-size: 72px;
     line-height: 110.06%;
     text-align: center;
     letter-spacing: -0.09em;
@@ -53,8 +61,8 @@ body {
 
 .card {
     position: absolute;
-    width: 80%;
-    height: 50%;
+    width: 333px;
+    height: 416px;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #FFFFFF;
@@ -64,39 +72,281 @@ body {
 
 .card .text {
     position: absolute;
-    top: 55%;
-    width: 80%;
+    width: 278px;
+    height: 188px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    top: 114px;
+    transform: translateX(-50%);
     font-family: KaiTi;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 27px;
     color: #000000;
 }
 
 .card .name {
     position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Ma Shan Zheng', cursive;
+    width: 175px;
+    height: 56px;
+    left: 79px;
+    top: 37px;
+    font-family: Ma Shan Zheng;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.22em;
+    color: rgba(0, 0, 0, 0.85);
 }
 
 .card1 {
-    top: 70%;
+    top: 50%;
 }
 
 .br1 {
     position: absolute;
-    top: 120%;
+    top: 875px;
     left: 0;
     height: 10vh;
     width: 100vw;
     background: url(assets/br1.png);
     background-repeat: no-repeat;
     background-size: 100vw 10vh;
+}
+
+.setting {
+    position: absolute;
+    width: 267px;
+    height: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 982px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 110.06%;
+    /* or 79px */
+    text-align: center;
+    letter-spacing: -0.09em;
+    color: #000000;
+}
+
+.stbmian {
+    position: absolute;
+    width: 333px;
+    height: 416px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1106px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.stgmian {
+    position: absolute;
+    width: 333px;
+    height: 416px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1587px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.stbf {
+    position: absolute;
+    width: 333px;
+    height: 416px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2068px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.miantextt {
+    position: absolute;
+    width: 332px;
+    height: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 37px;
+    font-family: Ma Shan Zheng;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.22em;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.miantextc {
+    position: absolute;
+    width: 278px;
+    height: 188px;
+    left: 28px;
+    top: 114px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 27px;
+    color: #000000;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+    resize: none;
+    read-only: read-only;
+}
+
+.br2 {
+    position: absolute;
+    top: 2549px;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background: url(assets/br2.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 10vh;
+}
+
+.zhuiyibo {
+    position: absolute;
+    width: 267px;
+    height: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2693px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 110.06%;
+    /* or 79px */
+    text-align: center;
+    letter-spacing: -0.09em;
+    color: #000000;
+}
+
+.com {
+    position: absolute;
+    width: 333px;
+    height: 416px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2854px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.picked {
+    position: absolute;
+    width: 333px;
+    height: 416px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3335px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.btn {
+    position: absolute;
+    width: 284px;
+    height: 128px;
+    left: 25px;
+    top: 144px;
+    background: rgba(189, 204, 255, 0.8);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.btn:active {
+    background: rgba(114, 147, 255, 0.8);
+}
+
+.btn font {
+    position: absolute;
+    width: 171px;
+    height: 36px;
+    left: 57px;
+    top: 46px;
+    font-family: KaiTi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    color: #000000;
+}
+
+.footer {
+    position: absolute;
+    width: 428vw;
+    height: 171px;
+    left: 0px;
+    top: 3806px;
+    background: #3F3F3F;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.icontext {
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.copy {
+    width: 100vw;
+    position: absolute;
+    height: 54px;
+    left: 8px;
+    top: 102px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+#bilibujia {
+    position: fixed;
+    width: 110vw;
+    height: 110vh;
+    left: 0;
+    top: 0;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.09em;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 999999999999999999999999999;
+    display: none;
 }
