@@ -2,8 +2,6 @@
     width: 0px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @font-face {
     font-family: 'KaiTi';
     src: url(KaiTi.ttf);
@@ -15,6 +13,7 @@
 }
 
 html {
+    user-select: none;
     width: 100vw;
 }
 
@@ -269,6 +268,18 @@ body {
     border-radius: 25px;
 }
 
+.class {
+    position: absolute;
+    width: 333px;
+    height: 416px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3816px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
 .btn {
     position: absolute;
     width: 284px;
@@ -305,7 +316,7 @@ body {
     width: 428vw;
     height: 171px;
     left: 0px;
-    top: 3806px;
+    top: 4324px;
     background: #3F3F3F;
     border-radius: 15px 15px 0px 0px;
 }

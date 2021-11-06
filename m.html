@@ -2,6 +2,10 @@
 <html lang="zh-cn">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://xcfo.github.io/styles/noscript.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,6 +60,11 @@
             <font>精选小说</font>
         </div>
     </div>
+    <div class="class">
+        <div class="btn" id="class">
+            <font>小说分类</font>
+        </div>
+    </div>
     <div class="footer">
         <font class="icontext">Text 0</font>
         <div class="copy">
@@ -69,6 +78,18 @@
     <div id="bilibujia">
         <font> 当前比例出现问题，请更改比例，否则会导致显示错误。</font>
     </div>
+    <script>
+        /* Button */
+        document.getElementById("com").onclick = function() {
+            window.location.href = "./mcommunity.html";
+        };
+        document.getElementById("pick").onclick = function() {
+            window.location.href = "./mpicked.html";
+        };
+        document.getElementById("class").onclick = function() {
+            window.location.href = "./class.html";
+        };
+    </script>
     <script src="msize.js"></script>
 </body>
 

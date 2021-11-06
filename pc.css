@@ -3,6 +3,7 @@
     src: url(KaiTi.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
 ::-webkit-scrollbar {
     width: 0px;
 }
@@ -74,6 +75,21 @@ body {
     /* Note: backdrop-filter has minimal browser support */
 }
 
+.nav .class {
+    position: absolute;
+    width: 226px;
+    height: 29px;
+    left: 1694px;
+    top: 9px;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
 .nav .icon {
     position: fixed;
     width: 32px;
@@ -117,9 +133,8 @@ body {
 .mtextmess {
     /* 我们热衷于制作写出精良的文字！ */
     position: absolute;
-    width: 607px;
-    height: 112px;
-    left: 229px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 102px;
     font-family: KaiTi;
     font-style: normal;
@@ -149,7 +164,7 @@ body {
     position: absolute;
     width: 262px;
     height: 98px;
-    left: 792px;
+    right: 12px;
     top: 218px;
     font-family: Dancing Script;
     font-style: normal;
