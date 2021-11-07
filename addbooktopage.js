@@ -44,7 +44,9 @@ $.getJSON(jsonurl, function(data) {
             <font class="Bookinfo">${book_author}</font>
             <font class="booki"> | 分类: </font>
             <font class="Bookinfo">${book_classify}</font>
-            <button class="click" title="阅读" onclick="top.location='read.html?book=${book_id}'"><span class="material-icons-rounds">auto_stories</span></button></div>
+            <button class="click" title="阅读" onclick="top.location='read.html?book=${book_id}'"><span class="material-icons-round">
+            auto_stories
+            </span></button></div>
         `);
         }
     }
