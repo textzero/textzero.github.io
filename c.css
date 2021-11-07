@@ -1,3 +1,8 @@
+::selection {
+    background: rgba(167, 233, 255, 0.466);
+    color: #000;
+}
+
 * {
     user-select: none;
     font-family: 'Noto Sans SC', sans-serif;
@@ -44,7 +49,7 @@ body {
 button {
     border: 1px solid #000;
     background-color: #fbfbfb;
-    width: 200px;
+    width: 12vw;
     height: 90px;
     border-radius: 2px;
     margin-left: 40px;
@@ -52,6 +57,8 @@ button {
     outline: none;
     cursor: pointer;
     transition: background-color 0.55s, color 0.1s, border-radius 0.4s;
+    position: absolute;
+    right: 5px;
 }
 
 button:hover {
@@ -65,20 +72,24 @@ button:hover {
 }
 
 .booki {
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size: 46px;
+    margin: 10px;
+    font-size: 25px;
     line-height: 54px;
-    width: 10vw;
-    height: 54px;
+    width: 70px;
     text-overflow: ellipsis;
 }
 
-.BookTitle {
-    font-size: 54px;
+.Bookinfo {
+    user-select: text;
+    font-size: 25px;
     line-height: 54px;
     height: 54px;
-    max-width: 70vw;
+    min-width: 54px;
     text-overflow: ellipsis;
     overflow: hidden;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
