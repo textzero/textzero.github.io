@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        
+         ::selection {
+            background: rgba(167, 233, 255, 0.466);
+            color: #000;
+        }
+        
+        .name,
+        .author,
+        .classify,
+        .description {
+            text-align: center;
+            width: 100vw;
+            height: 30px;
+            font-size: 25px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        
+        .i {
+            position: absolute;
+            left: 0;
+            width: 100vw;
+            margin-top: 2vw;
+            padding-top: 10px;
+        }
+        
+        img {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            z-index: -1;
+        }
+        
+        a {
+            position: absolute;
+            bottom: 10px;
+            text-decoration: line-through;
+            color: rgba(0, 0, 0, 0.075);
+            width: 100vw;
+            text-align: center;
+        }
+        
+        button {
+            border: 1px solid #000;
+            background-color: #fbfbfb;
+            width: 240px;
+            height: 90px;
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            transition: filter .5s, border-radius .6s;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            filter: invert(0%);
+            font-family: "Helvetica", Sans-serif;
+            font-size: 20px;
+        }
+        
+        button:hover {
+            filter: invert(100%);
+            border-radius: 10px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book | Text Zero</title>
+</head>
+
+<body>
+    <div id="book_info">
+    </div>
+    <script>
+        try {
+
+            const jsonurl = "https://raw.githubusercontent.com/textzero/textzero.github.io/main/json/books.json"
+
+            var jsonmain, index;
+
+            var book_id = location.href.split("?book=")[1];
+
+            $.getJSON(jsonurl, function(data) {
+                jsonmian = data;
+            }).done(function() {
+                for (var i = 0; i < jsonmian["books"].length; i++) {
+                    console.log(i);
+                    if (jsonmian["books"][i].id == book_id) {
+
+                        $("#book_info").append(`
+                            <div class="i">
+                                <center>
+                                    <img src="${jsonmian["books"][i]['image']}">
+                                </center>
+                            
+                            <br>
+                            <div class="name">书名: ${jsonmian["books"][i]['name']}</div>
+                            <br>
+                            <div class="author">作者: ${jsonmian["books"][i]['auth']}</div>
+                            <br>
+                            <div class="classify">分类: ${jsonmian["books"][i]['class']}</div>
+                            <br>
+                            <div class="description">描述: ${jsonmian["books"][i]['description']}</div>
+                            <br>
+                            <br>
+                            <button onclick="top.location='view/read.html?book=${book_id}'">阅读</button>
+                            </div>
+                            <a href="read.html?book=${jsonmian["books"][i]['id']}">For develop: ${jsonmian["books"][i]['id']}</a>
+                        `);
+                        break;
+                    }
+                }
+
+            })
+        } catch (err) {
+            console.log(err);
+        }
+    </script>
+</body>
+
+</html>
