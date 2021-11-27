@@ -24,6 +24,19 @@
             },
             "image": "https://i.ibb.co/hKKpLVt/pmn-2.png",
             "description": "某小说描述"
+        },
+        {
+            "id": "20211127121348",
+            "name": "短文一篇",
+            "auth": "开玩笑",
+            "class": "爱情、短文",
+            "text": {
+                "p1": "
+    女主去工地找男主，突然，一根铁掉了下来。
+他们俩，幸福的死在了一起。"
+            },
+            "image": "https://i.ibb.co/hKKpLVt/pmn-2.png",
+            "description": "短文一篇"
         }
     ]
 }
