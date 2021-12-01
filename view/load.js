@@ -6,7 +6,6 @@ $.getJSON(jsonurl, function(data) {
 }).done(function() {
     n = jsonmian["books"].length;
     for (var i = 0; i < n; i++) {
-        console.log(jsonmian);
         if (jsonmian["books"][i].id == book_id) {
             console.log(`${jsonmian["books"][i]['text']['p1']}`);
             index = i;
