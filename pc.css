@@ -43,21 +43,8 @@ body {
     background-repeat: no-repeat;
     background-size: 120% 90%;
     background-position: -300px;
-    animation: movebg 20s linear infinite;
     overflow: hidden;
     background-overflow: hidden;
-}
-
-@keyframes movebg {
-    0% {
-        background-position: -300px 0;
-    }
-    50% {
-        background-position: -350px 0;
-    }
-    100% {
-        background-position: -300px 0;
-    }
 }
 
 
