@@ -1,0 +1,65 @@
+::selection {
+    background: rgba(167, 233, 255, 0.466);
+    color: #000;
+}
+
+body {
+    background-color: #f5f5f5;
+    user-select: none;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.titlebar {
+    margin: 0;
+    height: 40px;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    padding: 0;
+    padding-top: 15px;
+    border: none;
+    position: fixed;
+    box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 45%);
+    background-color: white;
+    z-index: 199;
+}
+
+.titlebar font {
+    font-size: 20px;
+    font-family: "Helvetica", monospace;
+    margin-left: 10px;
+    user-select: all;
+}
+
+textarea {
+    left: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 36px;
+    margin-top: 60px;
+    width: calc(100vw - 20px);
+    background-color: transparent;
+    height: 100vh;
+}
+
+#next {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: background-color 0.5s;
+    font-family: "Helvetica", monospace;
+    color: #000;
+    cursor: pointer;
+}
+
+#next:active {
+    background-color: #000000;
+    color: #fff;
+}
