@@ -22,7 +22,7 @@ body {
 
 .titlebar {
     margin: 0;
-    height: 40px;
+    height: 80px;
     width: 100vw;
     left: 0;
     top: 0;
@@ -46,11 +46,11 @@ textarea {
     border: none;
     outline: none;
     resize: none;
-    font-size: 36px;
-    margin-top: 60px;
+    margin-top: 100px;
     width: calc(100vw - 20px);
     background-color: transparent;
     height: 100vh;
+    font-size: 36px;
     cursor: default;
 }
 
@@ -88,4 +88,29 @@ textarea {
 #back:active {
     background-color: #000000;
     color: #fff;
+}
+
+input[type="number"] {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: "Helvetica", monospace;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }

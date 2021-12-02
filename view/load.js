@@ -17,7 +17,7 @@ $.getJSON(jsonurl, function(data) {
         console.log(j);
         $("#content").append(`
          <div id="p${j}">
-         <textarea readonly>${jsonmian["books"][index]['text']['p'+j]}</textarea>
+         <textarea readonly id="t${j}">${jsonmian["books"][index]['text']['p'+j]}</textarea>
          </div>
      `);
     }

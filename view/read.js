@@ -23,3 +23,10 @@ get('back').addEventListener('click', function() {
     console.log(`NowRding${now}`);
     get(`p${now}`).style.display = 'block';
 });
+
+function change(s) {
+    for (i = 1; i <= l; i++) {
+        get(`t${i}`).style.fontSize = `${s}px`;
+        console.log(`${s}`);
+    }
+}
