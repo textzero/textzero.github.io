@@ -17,7 +17,7 @@ $.getJSON(jsonurl, function(data) {
             <div class="book" id="id_${book_id}">
             <font class="booki">书名: </font>
             <font class="Bookinfo">${book_name}</font>
-            <button class="click" title="阅读" onclick="top.location='read.html?book=${book_id}'"><span class="material-icons-rounds">auto_stories</span></button></div>
+            <button class="click" title="阅读" onclick="top.location='read.html?book=${book_id}'"><img src="https://fonts.gstatic.com/s/i/materialiconsround/auto_stories/v13/24px.svg"></button></div>
         `);
         }
     } else {
@@ -34,7 +34,7 @@ $.getJSON(jsonurl, function(data) {
             <font class="Bookinfo">${book_author}</font>
             <font class="booki"> | 分类: </font>
             <font class="Bookinfo">${book_classify}</font>
-            <button class="click" title="阅读" onclick="top.location='read.html?book=${book_id}'"><img src="./assets/read.svg"></button></div>
+            <button class="click" title="阅读" onclick="top.location='read.html?book=${book_id}'"><img src="https://fonts.gstatic.com/s/i/materialiconsround/auto_stories/v13/24px.svg"></button></div>
         `);
         }
     }
