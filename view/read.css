@@ -42,14 +42,15 @@ body {
 }
 
 textarea {
+    overflow-y: auto;
     left: 0;
     border: none;
-    outline: none;
     resize: none;
+    outline: none;
     margin-top: 100px;
     width: calc(100vw - 20px);
     background-color: transparent;
-    height: 100vh;
+    height: calc(100vh - 120px);
     font-size: 36px;
     cursor: default;
 }
