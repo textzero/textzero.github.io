@@ -16,23 +16,23 @@
         <div class="titlebar">
 
             <font id="asdbajh"></font><br>
-
+            <button id="next">
+                <span class="material-icons-round">
+                navigate_next
+                </span>
+            </button>
+            <button id="back">
+                <span class="material-icons-round">
+                    navigate_before
+                </span>
+            </button>
         </div>
         <div class="content">
             <div id="content">
 
             </div>
         </div>
-        <button id="next">
-            <span class="material-icons-round">
-            navigate_next
-            </span>
-        </button>
-        <button id="back">
-            <span class="material-icons-round">
-                navigate_before
-            </span>
-        </button>
+
     </center>
     <div id="toolbar">
         <div id="nav-icon1">
@@ -42,6 +42,14 @@
         </div>
         <center id="c">
             <font>字体大小</font><br><input type="number" id="fs" value="36" oninput="change(this.value)">
+            <br><br>
+            <font>字体</font><br>
+            <select onchange="font(this.value)">
+                <option value ="'Noto Sans SC', sans-serif">Noto Sans SC</option>
+                <option value ="'ZCOOL QingKe HuangYou', cursive">ZCOOL QingKe HuangYou</option>
+                <option value="'Zhi Mang Xing', cursive">Zhi Mang Xing</option>
+                <option value="'ZCOOL XiaoWei', serif">ZCOOL XiaoWei</option>
+              </select>
         </center>
     </div>
     <script src="load.js"></script>

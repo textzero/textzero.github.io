@@ -3,6 +3,10 @@
     src: url(../KaiTi.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 * {
     -webkit-user-select: none !important;
     -moz-user-select: none !important;
@@ -57,35 +61,38 @@ textarea {
     height: calc(100vh - 120px);
     font-size: 36px;
     cursor: default;
+    font-family: "Noto Sans SC", sans-serif;
 }
 
 #next {
     position: fixed;
-    right: 50px;
-    bottom: 50px;
-    height: 60px;
-    width: 60px;
+    right: 20px;
+    top: 25px;
+    height: 40px;
+    width: 40px;
     font-size: 20px;
     border-radius: 50%;
     border: 1px solid black;
     transition: background-color 0.5s;
     font-family: "Helvetica", monospace;
     color: #000;
+    background-color: transparent;
     cursor: pointer;
 }
 
 #back {
     position: fixed;
-    left: 50px;
-    bottom: 50px;
-    height: 60px;
-    width: 60px;
+    right: 70px;
+    top: 25px;
+    height: 40px;
+    width: 40px;
     font-size: 20px;
     border-radius: 50%;
     border: 1px solid black;
     transition: background-color 0.5s;
     font-family: "Helvetica", monospace;
     color: #000;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -93,6 +100,15 @@ textarea {
 #back:active {
     background-color: #000000;
     color: #fff;
+}
+
+select {
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px;
+    width: 270px;
+    text-overflow: ellipsis;
 }
 
 input[type="number"] {
@@ -103,7 +119,6 @@ input[type="number"] {
     font-family: "Helvetica", monospace;
     color: #000;
     text-align: center;
-    cursor: pointer;
     outline: none;
 }
 
@@ -187,8 +202,8 @@ input[type=number] {
     position: absolute;
     height: 4px;
     width: 80%;
-    background: #d3531a;
-    border-radius: 4px;
+    background: #000000;
+    border-radius: 50px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);

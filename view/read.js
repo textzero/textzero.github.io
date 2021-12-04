@@ -30,3 +30,9 @@ function change(s) {
         console.log(`${s}`);
     }
 }
+
+function font(f) {
+    for (i = 1; i <= l; i++) {
+        get(`t${i}`).style.fontFamily = `${f}`;
+    }
+}
